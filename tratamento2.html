@@ -132,6 +132,10 @@
             margin-bottom: 20px;
         }
 
+        .image-compare .icv__label-before {
+            z-index: 3;
+        }
+
     </style>
 
     <div class="image-container">
@@ -216,6 +220,16 @@
         viewers.forEach((element) => {
             let view = new ImageCompare(element, options).mount();
         });
+
+        document.querySelectorAll('.image-compare').forEach(element => {
+            const labelAfter = element.querySelector('.icv__label-after');
+            const wrapper = element.querySelector('.icv__wrapper');
+
+            if (wrapper && labelAfter) {
+                wrapper.appendChild(labelAfter);
+            }
+        });
+
     </script>
 
 </body>
