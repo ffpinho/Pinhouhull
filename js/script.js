@@ -25,4 +25,4 @@ $('[data-fancybox="watermark"]').fancybox({
 
 // Preload watermark image
 // Please, use your own image
-(new Image()).src = "https://fancyapps.com/GJbkSPU.png";
+//(new Image()).src = "https://fancyapps.com/GJbkSPU.png";
